@@ -1,0 +1,29 @@
+.carousel {
+    margin-top: 10px;
+    width: 100vw;
+    overflow: hidden;
+    background: #fff;
+}
+.carousel-content {
+    display: flex;
+    width: max-content;
+    gap: 5px;
+    animation: scroll 40s linear infinite;
+}
+.carousel-content img {
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

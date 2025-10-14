@@ -1,0 +1,121 @@
+body {
+    background: rgb(228, 254, 255);
+}
+.navbar {
+    width: 100%;
+    background-color: #0b1f60e9;
+    box-shadow: 0 1px 3px -2px black;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 10;
+}
+
+.dark-nav {
+    background-color: #0b1f60e9;
+    color: #fff;
+}
+.nav-logo p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    transition: .5s;
+}
+.nav-logo p:hover {
+    color: rgb(166, 251, 166);
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.nav-menu li {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav-menu li a{
+    color: #fff;
+    transition: .5s;
+}
+.nav-menu li a:hover {
+    color: green;
+}
+
+.nav-hire {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav-hire button {
+    width: 155px;
+    height: 56px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background: #de5c0b;
+    cursor: pointer;
+}
+
+.nav-hire button:hover {
+    background: green;
+}
+
+.nav-hire button:active {
+    background: #ee7b34;
+}
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+/* Responsive style */
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0b1f60e9;
+        display: none;
+        padding: 10px 0;
+        gap: 20px;
+        z-index: 9;
+    }
+    .nav-menu.open {
+        display: flex;
+    }
+    .nav-menu li a {
+        color: #fff;
+    }
+    .nav-hire {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}

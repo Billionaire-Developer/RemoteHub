@@ -1,0 +1,54 @@
+.people {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+.people h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 40px;
+    color: #27305c;
+}
+
+.peoples-remark {
+    flex: 1 1 250px;
+    max-width: 280px;
+    height: 180px;
+    border-radius: 20px;
+    background-color: #d29494;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.peoples-remark h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+.peoples-remark p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*Color styling */
+.navy {
+    background-color: #0b1f60e9;
+}
+.brown {
+    background-color:rgb(4, 192, 192);
+}
+.blue {
+    background-color: rgb(18, 150, 152);
+}
+.lilac {
+    background-color: #27305c;
+}

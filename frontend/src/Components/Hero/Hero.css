@@ -1,0 +1,73 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../Asset/Hiring.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-left {
+    text-align: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.hero-left h2 {
+    font-size: 60px;
+    font-weight: 700;
+    justify-content: center;
+    color: #fff;
+}
+.hero-left p {
+    color: gold;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.hero-left .post {
+    width: 155px;
+    height: 56px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background: #FF6B00;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-left .post:hover {
+    background: #e65a00;
+    transform: scale(1.1);
+}
+
+.hero-left .work {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background: #3B82F6;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-left .work:hover {
+    background: #2563eb;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .hero-left h2 {
+        font-size: 45px;
+    }
+}
